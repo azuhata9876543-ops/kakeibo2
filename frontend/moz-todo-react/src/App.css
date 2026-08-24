@@ -1,0 +1,335 @@
+header h2 {
+  padding: 12px 24px;
+  margin: 10px;
+  float: left;
+  color: #fff;
+}
+
+.logout {
+  float: right;
+}
+
+.link {
+  float: right;
+  background-color: var(--accent);
+  text-decoration: none;
+}
+
+.login-form h1 {
+  margin-top: 0;
+  margin-bottom: 7px;
+  font-size: 70px;
+  letter-spacing: 5px;
+}
+
+.login-form form {
+  flex-direction: column;
+  gap: 5px;
+  width: 400px;
+}
+
+.login-form label button {
+  position: absolute;
+  right: 10px;
+  bottom: 19px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.login {
+  width: 140px;
+  border: none;
+  font-weight: bold;
+  display: block;
+  margin: 10px auto;
+}
+
+.submit {
+  flex-basis: 80%;
+  background: var(--bg);
+  font-size: 18px;
+  padding: 20px 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input,
+select {
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  width: 300px;
+  font-size: 16px;
+  background-color: var(--code-bg);
+  color: var(--text-h);
+  box-sizing: border-box;
+}
+
+input:not(:placeholder-shown),
+select.has-value {
+  background-color: #fff;
+}
+
+input[type="date"].is-empty {
+  background-color: var(--code-bg) !important;
+}
+
+.total-balance {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pie {
+  float: left;
+  width: 50%;
+}
+
+.balance {
+  float: right;
+  width: 40%;
+  font-size: 18px;
+}
+
+.total {
+  border-bottom: solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 30px 0;
+}
+
+.balance-content {
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  gap: 15px;
+}
+
+.right {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(21%) sepia(48%) saturate(5000%) hue-rotate(200deg)
+    brightness(70%) contrast(93%);
+}
+
+.type-buttons .btn {
+  flex: 1;
+  width: 110px;
+  margin: 0 20px;
+  background: #b2b5bf;
+}
+
+.small-btn.income:hover,
+.income:hover {
+  background: #6cb170;
+}
+
+.income.active {
+  background: #2e7d32;
+}
+
+.small-btn.expense:hover,
+.expense:hover {
+  background: #fc9d9d;
+}
+
+.expense.active {
+  background: #bb4747;
+}
+
+.list {
+  width: 100%;
+  max-width: 900px;
+  margin: 10px auto;
+  overflow-x: auto;
+}
+
+.list table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background-color: #f1f9fb;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.list th:nth-child(1),
+.list td:nth-child(1) {
+  width: 15%;
+}
+/* 日付 */
+.list th:nth-child(2),
+.list td:nth-child(2) {
+  width: 10%;
+}
+/* 収支 */
+.list th:nth-child(3),
+.list td:nth-child(3) {
+  width: 15%;
+}
+/* 金額 */
+.list th:nth-child(4),
+.list td:nth-child(4) {
+  width: 15%;
+}
+/* カテゴリ */
+.list th:nth-child(5),
+.list td:nth-child(5) {
+  width: 20%;
+}
+/* 品目 */
+.list th:nth-child(6),
+.list td:nth-child(6) {
+  width: 15%;
+}
+/* メモ */
+.list th:nth-child(7),
+.list td:nth-child(7) {
+  width: 10%;
+}
+
+.list th {
+  background: var(--bg2);
+  color: #ffffff;
+  padding: 14px 16px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+}
+
+.list td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-h);
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.list td:nth-child(3) {
+  text-align: right;
+  font-family: var(--mono);
+  font-weight: bold;
+}
+
+.cell-wrap {
+  word-break: break-all;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.list tbody tr:hover {
+  background-color: var(--border);
+  transition: background-color 0.2s;
+}
+
+.small-btn.lis:hover {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+.small-btn.lis {
+  background-color: #ffffff;
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+.negative {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn.entry {
+  background: var(--bg2);
+  color: #ffffff;
+  width: 300px;
+  margin: 30px;
+  padding: 20px;
+}
+
+.expense-row td {
+  color: #d32f2f;
+}
+
+.detail {
+  width: 100%;
+  max-width: 430px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detail-row {
+  padding: 5px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.row-upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.detail input,
+.detail select {
+  width: 230px;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  color: var(--text-h);
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+strong {
+  width: 60px;
+}
+
+.detail button {
+  margin-left: 8px; /* ボタン同士の間隔 */
+}
+
+.btn.delete {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.small-btn.keep {
+  background: var(--bg);
+  color: #ffffff;
+  border: none;
+}
+
+.small-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.text-wrap {
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.mode-buttons .btn {
+  width: auto;
+}
