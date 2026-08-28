@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:8080";
+const BASE_URL = import.meta.env.REACT_APP_API_URL || "http://localhost:8080";
 const API_URL = `${BASE_URL}/api/auth/login`;
 
 function Login() {
