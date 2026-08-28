@@ -29,6 +29,7 @@ public class EntityCategory {
     @Column(name = "category_type", nullable = false)
     private CategoryType type;
 
+    @Column(unique = true)
     private String category;
 
     public EntityCategory() {
