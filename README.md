@@ -7,7 +7,7 @@
 
 テスト用に実際に触っていただけるデプロイ先のURLです。
 
-**URL:** [https://kakeibo-app-gamma-two.vercel.app/](https://kakeibo-app-gamma-two.vercel.app/)
+**URL:** [https://kakeibo2-ashen.vercel.app/](https://kakeibo2-ashen.vercel.app/)
 
 ### テスト用ログインアカウント
 

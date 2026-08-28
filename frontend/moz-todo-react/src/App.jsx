@@ -9,7 +9,8 @@ import Balance from "./Balance.jsx";
 import ProtectedRoute from "./ProtectedRoute.jsx";
 import "./App.css";
 
-const API_URL = "http://localhost:8080/api/transactions";
+const BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:8080";
+const API_URL = `${BASE_URL}/api/transactions`;
 
 function App() {
   const [transactions, setTransactions] = useState([]);
